@@ -1,6 +1,4 @@
 # ForgedInTech-Website
-Official Website for ForgedInTech
+<h2>Official Website for ForgedInTech</h2>
 
-
-
-<img src="https://i.imgur.com/qEXn3M6.jpg" />
+<center><img src="https://i.imgur.com/qEXn3M6.jpg" /></center>
