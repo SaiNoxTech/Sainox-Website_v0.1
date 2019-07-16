@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/plugins.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/styles-2-dark.css">
+</head>
+<body >
+
+
+
+    <!-- Start Header Section-->
+    <section class="main-header main-section main-header-animated" data-scroll-index="1">
+        <canvas class="scene scene--full" id="eclipse-scene2"></canvas>
+        <div class="header-content">
+            <div class="header-sub-bg">
+                <div class="header-title">
+                    <h1 class="textillate text-white" data-loop="true" data-aos="fade-up" data-aos-delay="300">
+                    <span class="textillate-text">
+                        <span data-in-effect="fadeIn" data-out-effect="fadeOut">All-in-one Blockchain</span>
+                        <span data-in-effect="fadeIn" data-out-effect="fadeOut">Smart Contracts</span>
+                        <span data-in-effect="fadeIn" data-out-effect="fadeOut">Enterprise blockchain</span>
+                        <span data-in-effect="fadeIn" data-out-effect="fadeOut">Side chains</span>
+                    </span>
+                    </h1>
+                </div>
+                <!--div class="header-sub">
+                    <div class="btn hoverable bg-white waves-effect waves-button hover-up">
+                        <a class="text-transparent main-gradient-bg" href="">Documentation</a>
+                    </div>
+                    <div class="btn hoverable main-gradient-bg waves-effect waves-button hover-up">
+                        <a href="">&nbsp&nbsp&nbsp Web Wallet &nbsp&nbsp&nbsp </a>
+                    </div>
+                </div-->
+                <div class="social-icons vertical-social-icons">
+                    <a href="https://t.me/joinchat/HCZnLBAVFvwB60gJerbK9Q" target="_blank"><img src="images/foot_icon_0.png" alt=""></a>
+                                        <a href="" target="_blank"><img src="images/foot_icon_1.png" alt=""></a>
+                                        
+                                        <a href="" target="_blank"><img src="images/foot_icon_2.png" alt=""></a>
+                                        
+                                        <a href="" target="_blank"><img src="images/foot_icon_3.png" alt=""></a>
+                                        
+                                        <a href="" target="_blank"><img src="images/foot_icon_4.png" alt=""></a>
+                                        
+                                        <a href="" target="_blank"><img src="images/foot_icon_5.png" alt=""></a>
+
+                                        <a href="" target="_blank"><img src="images/insta.png" alt=""></a>
+                                        
+                                        <a href="" target="_blank"><img src="images/foot_icon_6.png" alt=""></a>
+                                        <a href="" target="_blank"><img src="images/foot_icon_7.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+<script type="text/javascript" id="hs-script-loader" async defer src="http://js.hs-scripts.com/4654679.js"></script>
+
+<script type="x-shader/x-vertex" id="wrapVertexShader">
+        attribute float size; attribute vec3 color; varying vec3 vColor; void main() { vColor = color; vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 ); gl_PointSize = size * ( 350.0 / - mvPosition.z ); gl_Position = projectionMatrix * mvPosition;			}
+</script>
+<script type="x-shader/x-fragment" id="wrapFragmentShader">
+        varying vec3 vColor; uniform sampler2D texture; void main(){ vec4 textureColor = texture2D( texture, gl_PointCoord ); if ( textureColor.a < 0.3 ) discard; vec4 color = vec4(vColor.xyz, 1.0) * textureColor; gl_FragColor = color; }
+</script>
+<script src="./js/plugins.js"></script>
+<script src="./js/animated-plugins-min.js"></script>
+<script src="./js/animated-main.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
