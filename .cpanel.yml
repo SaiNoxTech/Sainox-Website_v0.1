@@ -2,18 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/sainox/public_html/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp ./css/bootstrap.min.css $DEPLOYPATH
-    - /bin/cp ./css/materialize.css $DEPLOYPATH
-    - /bin/cp ./css/materialize.min.css $DEPLOYPATH
-    - /bin/cp ./css/plugins.css $DEPLOYPATH
-    - /bin/cp ./css/starter-template.css $DEPLOYPATH
-    - /bin/cp ./css/style.css $DEPLOYPATH
-    - /bin/cp ./css/slider/navstylechange.css $DEPLOYPATH
-    - /bin/cp ./css/slider/noneed.css $DEPLOYPATH
-    - /bin/cp ./css/slider/settings.css $DEPLOYPATH
-    - /bin/cp ./css/slider/style.css $DEPLOYPATH
-    - /bin/cp ./js/ $DEPLOYPATH
-    - /bin/cp ./js/slider/ $DEPLOYPATH
-    - /bin/cp /images $DEPLOYPATH
-    - /bin/cp ./particles/ $DEPLOYPATH
+    - /bin/cp * $DEPLOYPATH
