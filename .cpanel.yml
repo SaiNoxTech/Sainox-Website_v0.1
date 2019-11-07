@@ -15,5 +15,5 @@ deployment:
     - /bin/cp ./css/slider/style.css $DEPLOYPATH
     - /bin/cp ./js/ $DEPLOYPATH
     - /bin/cp ./js/slider/ $DEPLOYPATH
-    - /bin/cp ./images/ $DEPLOYPATH
-    - /bin/cp ./particles/ $DEPLOYPATH    
+    - /bin/cp /images $DEPLOYPATH
+    - /bin/cp ./particles/ $DEPLOYPATH
